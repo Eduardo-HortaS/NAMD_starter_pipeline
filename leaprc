@@ -1,5 +1,5 @@
-source /home/paulohgds/amber22/dat/leap/cmd/oldff/leaprc.ff99SB
-source /home/paulohgds/amber22/dat/leap/cmd/leaprc.water.tip3p
+source /home/eduardo/amber22/dat/leap/cmd/oldff/leaprc.ff99SB
+source /home/eduardo/amber22/dat/leap/cmd/leaprc.water.tip3p
 
 system = loadpdb 5h3r.pdb 
 protein = loadpdb protein.pdb
