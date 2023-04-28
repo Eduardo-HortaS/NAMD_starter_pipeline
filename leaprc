@@ -1,0 +1,16 @@
+source /home/paulohgds/amber22/dat/leap/cmd/oldff/leaprc.ff99SB
+source /home/paulohgds/amber22/dat/leap/cmd/leaprc.water.tip3p
+
+system = loadpdb 5h3r.pdb 
+protein = loadpdb protein.pdb
+dna = loadpdb dna.pdb
+complex = loadpdb complex.pdb
+
+solvateBox system TIP3PBOX 7.0
+addions2 system MG2 0
+saveamberparm system 5h3r_system.top 5h3r_system.crd
+savepdb system 5h3r_system.pdb
+saveamberparm protein protein.top protein.crd
+saveamberparm dna dna.top dna.crd
+saveamberparm complex complex.top complex.crd
+quit
