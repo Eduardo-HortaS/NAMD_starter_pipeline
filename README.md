@@ -1,7 +1,7 @@
-## Pipeline MMPBSA Tutorial
+## MMPBSA Pipeline Tutorial
 
 
-**leaprc content**
+# leaprc content 
 
 Loading the forcefield: 
 
@@ -45,7 +45,7 @@ saveamberparm complex complex.top complex.crd
 quit
 ```
 
-**build_scripts.py content**
+# build_scripts.py content
 
 Having saved these parameters for all components, it is now time to run the simulation (NAMD) for the system after solvation and neutralization. We're going to use build_scripts.py to modify the inputs inside it to .top and .crd files for your system.
 
@@ -64,7 +64,7 @@ Having saved these parameters for all components, it is now time to run the simu
 
 Where output 00 corresponds to solvent equilibration, 01 to system equilibration and 02 to production.
 
-**pdb_to_pdb_fixed.py content**
+# pdb_to_pdb_fixed.py content
 
 System 1 requires water molecule fixation for solvent equilibration, making it necessary to perform the following modification of pdb_to_pdb_fixed.py:
 
@@ -78,7 +78,7 @@ def export_PDB_fixed (pdbin   = system.pdb,
 
 Note that equilibration and production times can be changed.
 
-**NaMD_Object3.py content**
+# NaMD_Object3.py content
 
 Inside NaMD_Object3.py it is possible to change simulation configurations according to user needs. To generate a NAMD config file, use:
 
