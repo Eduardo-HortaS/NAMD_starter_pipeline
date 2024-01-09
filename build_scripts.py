@@ -26,18 +26,19 @@
 
 
 from NaMD_Object3 import *
+from pdb_to_pdb_fixed import export_PDB_fixed
+
+export_PDB_fixed()
+
+crd           = 'complex.inpcrd'  
+parm          = 'complex.prmtop'
+pdb_fixed1    = 'complex_fix.pdb'
 
 
 
-crd           = '2h1x_solv.crd'  
-parm          = '2h1x_solv.top'
-pdb_fixed1    = '2h1x_solv.pdb'
-
-
-
-outputname_00 = '2h1x_solv'
-outputname_01 = '2h1x_solv'
-outputname_02 = '2h1x_solv'
+outputname_00 = 'complex_solvent_equilibration'
+outputname_01 = 'complex_system_equilibration'
+outputname_02 = 'complex_production'
 
 
 
