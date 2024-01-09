@@ -45,13 +45,3 @@ def export_PDB_fixed (pdbin   = 2h1x_restrict.pdb,
 		
 	fileout = open(pdbout, 'w')
 	fileout.writelines(data2)
-
-
-print sys.argv
-args = sys.argv
-
-pdbin = args[1]
-
-pdbout = args[2]
-
-export_PDB_fixed(pdbin = pdbin, pdbout = pdbout)
