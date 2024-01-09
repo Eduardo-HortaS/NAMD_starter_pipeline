@@ -24,8 +24,8 @@
 
 import os, sys
 
-def export_PDB_fixed (pdbin   = 2h1x_restrict.pdb, 
-                      pdbout  = fix.pdb, 
+def export_PDB_fixed (pdbin   = 'complex.pdb', 
+                      pdbout  = 'complex_fix.pdb', 
                       wat     = True,
                       lig     = False,
                       protein = False, 
