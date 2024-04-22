@@ -47,7 +47,7 @@ quit
 
 # build_scripts.py content
 
-Having saved these parameters for all components, it is now time to run the simulation (NAMD) for the system after solvation and neutralization. We're going to use build_scripts.py to modify the inputs inside it to .top and .crd files for your system.
+Having saved these parameters for all components, it is now time to run the simulation (NAMD) for the system after solvation and neutralization. We're going to use build_scripts.py to generate .namd config files based on the .top, .crd e .pdb files for your system.
 
 ```
  crd           = 'system.crd'  
@@ -66,7 +66,7 @@ Where output 00 corresponds to solvent equilibration, 01 to system equilibration
 
 # pdb_to_pdb_fixed.py content
 
-System 1 requires water molecule fixation for solvent equilibration, making it necessary to perform the following modification of pdb_to_pdb_fixed.py:
+System 1 requires water molecule to be free while the rest of the system is fixated for solvent equilibration, making it necessary to perform the following modification of pdb_to_pdb_fixed.py:
 
 ```
 def export_PDB_fixed (pdbin   = system.pdb,
@@ -86,4 +86,4 @@ Inside NaMD_Object3.py it is possible to change simulation configurations accord
 namd system.namd
 ```
 
-After the simulation, the resulting sistema.dcd is a trajectory file that can be used in MMPBSA utilizing its input. 
+After the simulation, the resulting system.dcd is a trajectory file that can be used in MMPBSA utilizing its input. 
