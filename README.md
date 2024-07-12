@@ -1,4 +1,4 @@
-## MMPBSA Pipeline Tutorial
+## NAMD Starter Pipeline Tutorial
 
 
 # leaprc content 
@@ -86,4 +86,4 @@ Inside NaMD_Object3.py it is possible to change simulation configurations accord
 namd system.namd
 ```
 
-After the simulation, the resulting system.dcd is a trajectory file that can be used in MMPBSA utilizing its input. 
+After the simulation, the resulting system.dcd is a trajectory file that can be used in <whichever_analysis_you_want> utilizing its input. 
